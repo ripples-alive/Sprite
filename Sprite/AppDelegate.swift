@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Sprite
+//  GluttonousSnake
 //
-//  Created by Jayvic on 14-10-11.
+//  Created by Jayvic on 14-10-8.
 //  Copyright (c) 2014年 Jayvic. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  GameViewController.swift
-//  Sprite
+//  GluttonousSnake
 //
-//  Created by Jayvic on 14-10-11.
+//  Created by Jayvic on 14-10-8.
 //  Copyright (c) 2014年 Jayvic. All rights reserved.
 //
 
@@ -27,8 +27,8 @@ extension SKNode {
 
 class GameViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
 
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
             // Configure the view.
@@ -40,7 +40,8 @@ class GameViewController: UIViewController {
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
+//            scene.size = self.view.frame.size
+            scene.scaleMode = .ResizeFill
             
             skView.presentScene(scene)
         }
